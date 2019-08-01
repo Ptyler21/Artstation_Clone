@@ -1,32 +1,30 @@
-/* This is for the navbar class */
-.navbar{
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; 
-    top: 0; /* position navbar at top of page */
-    width: 100%; /* full page width */
+:root{
+    --menu-transition-delay: .5s;
+    --menu-transition-duration: .25s;
+    --main-menu-height: 50px;
+    --main-menu-level-1-height: 50px;
+    --sticky-block-zindex: 1031;
+}
+body.fixed-main-nav.ArtworkController{
+    padding-top: 91px;
+    padding-top: var(--main-menu-height);
+    letter-spacing: .015em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #bbb;
+    background-color: #171717;
+    margin:0;
 
 }
 
-/* Links for stuff INSIDE of navbar */
-.navbar a {
-    float: left;
+.wrapper{
+    min-height: calc(100vh - 91px - 50px);
+    min-height: cacl(100vh - var(--main-menu-height) - 50px); 
+}
+
+div{
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-
 }
-
-/* changes background of a elems when mouse hovers */
-.navbar a:hover {
-    background:#ddd;
-    color: black; 
-
-}
-
-/*style for content in main class */ 
-.main{
-    margin-top: 20px; /* modify to get rid of that annoying bottom space in the nav bar */
+html, body{
+    height: 100;
 }
