@@ -1,68 +1,8 @@
-:root{
-    --menu-transition-delay: .5s;
-    --menu-transition-duration: .25s;
-    --main-menu-height: 50px;
-    --main-menu-level-1-height: 50px;
-    --sticky-block-zindex: 1031;
-}
-body.fixed-main-nav.ArtworkController{
-    padding-top: 91px;
-    padding-top: var(--main-menu-height);
-    letter-spacing: .015em;
-    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    color: #bbb;
-    background-color: #171717;
-    margin:0;
 
+nav{
+    background-color: black;
 }
 
-.wrapper{
-    min-height: calc(100vh - 91px - 50px);
-    min-height: calc(100vh - var(--main-menu-height) - 50px); 
-}
-
-div{
-    display: block;
-}
-html, body{
-    height: 100;
-}
-
-.nav-fallback{
-    padding: 10px 0;
-    font-size: 12px;
-    overflow-y: auto;
-    /*opacity: 0; This seems to get rid of the logo and list items*/
-}
-
-.align-items-center{
-    -webkit-box-align: justify!important;
-    justify-content: space-between!important;
-}
-
-.d-flex{
-    display: flex!important;
-}
-
-.list-unstyled{
-    padding-left: 0;
-    list-style: none;
-}
-
-ul{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-li.nav-fallback{
-    display: flex;
-    font-size: 12px;
-}
-
-a:webkit-any-link{
-    cursor: pointer;
+nav a{
+    color: cyan;
 }
